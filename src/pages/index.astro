@@ -1,11 +1,192 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <header
+    class="border-b border-neutral-800/80 bg-neutral-950/80 backdrop-blur"
+  >
+    <div class="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 text-white">
+        <img src="/favicon.svg" alt="AstridCloud.org" class="h-6 w-6" />
+        <span class="font-semibold">AstridCloud.org</span>
+      </a>
+      <nav
+        aria-label="Principal"
+        class="hidden sm:flex items-center gap-6 text-sm"
+      >
+        <a href="#inicio" class="text-neutral-300 hover:text-white">Inicio</a>
+        <a href="#proyectos" class="text-neutral-300 hover:text-white"
+          >Proyectos</a
+        >
+        <a
+          href="https://astridcloud.com"
+          class="text-neutral-300 hover:text-white">Plataforma .com</a
+        >
+      </nav>
+    </div>
+  </header>
+  <main class="min-h-screen flex flex-col">
+    <section id="inicio" class="mx-auto max-w-3xl px-6 py-20">
+      <div class="mb-6">
+        <span
+          class="inline-block rounded-full border border-neutral-800 px-3 py-1 text-xs tracking-wide uppercase text-neutral-400"
+          >Open‑Core · Freemium</span
+        >
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight text-white">
+        AstridCloud.org
+      </h1>
+      <p class="mt-4 text-neutral-300 text-lg">
+        Traemos las herramientas de AstridCloud al <span
+          class="underline decoration-neutral-700 underline-offset-4"
+          >Open Source</span
+        >.
+      </p>
+      <p class="mt-2 text-neutral-300">
+        El modelo se convierte en <strong>Freemium</strong> u <strong
+          >Open‑Core</strong
+        >:
+        <span class="font-medium">
+          la página <code class="px-1 rounded bg-neutral-900">.org</code> es la base
+          gratuita</span
+        > y
+        <span class="font-medium"
+          >la <code class="px-1 rounded bg-neutral-900">.com</code> es la plataforma
+          de servicios de pago/empresariales</span
+        >.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          href="#proyectos"
+          class="group inline-flex items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 text-white px-5 py-3 transition-all hover:-translate-y-0.5 hover:bg-neutral-800 hover:shadow-lg"
+        >
+          Explorar .org
+          <svg
+            class="h-4 w-4 opacity-80 group-hover:opacity-100 transition"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L12 6.414V17a1 1 0 11-2 0V6.414L6.707 9.707A1 1 0 115.293 8.293l5-5z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://astridcloud.com"
+          class="inline-flex items-center gap-2 rounded-md border border-neutral-800 bg-neutral-800 text-neutral-100 px-5 py-3 transition-colors hover:bg-neutral-700"
+        >
+          Ver plataforma .com
+        </a>
+      </div>
+    </section>
+
+    <section
+      aria-labelledby="proyectos-title"
+      class="mx-auto max-w-5xl px-6 py-12 border-t border-neutral-800"
+    >
+      <h2 id="proyectos-title" class="text-xl font-semibold text-white">
+        Proyectos Open Source
+      </h2>
+      <p class="mt-2 text-neutral-400">
+        Listado de iniciativas públicas de AstridCloud: versiones y estado.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Proyecto activo: sitio web .org -->
+        <article
+          class="rounded-lg border border-neutral-800 bg-neutral-900 p-4 hover:bg-neutral-800 transition-colors"
+        >
+          <header class="flex items-center gap-3">
+            <img src="/favicon.svg" alt="AstridCloud.org" class="h-9 w-9" />
+            <div>
+              <h3 class="text-white font-medium">Sitio web .org</h3>
+              <p class="text-xs text-neutral-400">
+                Versión <span class="font-mono">v0.0.1</span>
+              </p>
+            </div>
+          </header>
+          <div class="mt-3 flex items-center gap-2">
+            <span
+              class="inline-flex items-center rounded px-2 py-1 text-xs bg-neutral-800 text-neutral-200"
+              >Activo</span
+            >
+            <a
+              href="#"
+              class="text-xs text-neutral-300 underline decoration-neutral-700 underline-offset-2 hover:text-white"
+              >Ver repositorio</a
+            >
+          </div>
+        </article>
+
+        <!-- Placeholders en desarrollo -->
+        <article
+          class="rounded-lg border border-neutral-800 bg-neutral-900 p-4 opacity-90 hover:bg-neutral-800 transition-colors"
+        >
+          <header class="flex items-center gap-3">
+            <img src="/favicon.svg" alt="SDK AstridCloud" class="h-9 w-9" />
+            <div>
+              <h3 class="text-yellow-400 font-medium">AstridHosting</h3>
+              <p class="text-xs text-neutral-400">
+                Versión <span class="font-mono">v2.1.0</span>
+              </p>
+            </div>
+          </header>
+          <div class="mt-3">
+            <span
+              class="inline-flex items-center rounded px-2 py-1 text-xs bg-yellow-900/70 text-yellow-300"
+              >Transitando a Open Source</span
+            >
+          </div>
+        </article>
+
+        <article
+          class="rounded-lg border border-neutral-800 bg-neutral-900 p-4 opacity-90 hover:bg-neutral-800 transition-colors"
+        >
+          <header class="flex items-center gap-3">
+            <img src="/favicon.svg" alt="CLI AstridCloud" class="h-9 w-9" />
+            <div>
+              <h3 class="text-white font-medium">CLI</h3>
+              <p class="text-xs text-neutral-400">
+                Versión <span class="font-mono">v0.0.0-dev</span>
+              </p>
+            </div>
+          </header>
+          <div class="mt-3">
+            <span
+              class="inline-flex items-center rounded px-2 py-1 text-xs bg-neutral-800 text-neutral-300"
+              >En desarrollo</span
+            >
+          </div>
+        </article>
+
+        <article
+          class="rounded-lg border border-neutral-800 bg-neutral-900 p-4 opacity-90 hover:bg-neutral-800 transition-colors"
+        >
+          <header class="flex items-center gap-3">
+            <img src="/favicon.svg" alt="Docs AstridCloud" class="h-9 w-9" />
+            <div>
+              <h3 class="text-white font-medium">Documentación</h3>
+              <p class="text-xs text-neutral-400">
+                Versión <span class="font-mono">v0.0.0-dev</span>
+              </p>
+            </div>
+          </header>
+          <div class="mt-3">
+            <span
+              class="inline-flex items-center rounded px-2 py-1 text-xs bg-neutral-800 text-neutral-300"
+              >En desarrollo</span
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="mx-auto max-w-3xl px-6 mt-16 text-sm text-neutral-500">
+      © 2025 AstridCloud.org · Base gratuita .org · Servicios .com
+    </footer>
+  </main>
 </Layout>

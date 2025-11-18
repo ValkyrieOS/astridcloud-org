@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Fuentes de contenido para Tailwind v4 (escanea .astro y otros) */
+@source "../pages/**/*.{astro,html}";
+@source "../components/**/*.{astro,html}";
+@source "../layouts/**/*.{astro,html}";
+@source "../**/*.{js,ts,tsx,vue,svelte,md,mdx}";
+
+/* Ajustes mínimos globales */
+html, body { height: 100%; }
