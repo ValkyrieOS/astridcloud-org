@@ -1,0 +1,412 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+    <Header />
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="relative mx-auto max-w-5xl px-6 py-20">
+            <!-- Badge -->
+            <div class="mb-8 flex justify-center">
+                <div class="badge-wrapper">
+                    <span class="badge">
+                        <svg
+                            class="h-4 w-4 text-blue-400"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        Nueva Alianza
+                    </span>
+                </div>
+            </div>
+
+            <!-- Title -->
+            <h1
+                class="text-5xl sm:text-7xl font-bold tracking-tight text-white mb-8 text-center"
+            >
+                Bit&Chill <span class="text-blue-400">|</span> AstridCloud
+            </h1>
+
+            <!-- Subtitle -->
+            <p
+                class="text-xl sm:text-2xl text-neutral-400 text-center max-w-3xl mx-auto mb-16"
+            >
+                Una nueva alianza estratégica que lleva la experiencia
+                comunitaria al siguiente nivel
+            </p>
+        </section>
+
+        <!-- Content Section -->
+        <section class="mx-auto max-w-4xl px-6 pb-20">
+            <!-- Introduction Card -->
+            <div
+                class="mb-12 rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-900/90 to-neutral-900/50 p-8 backdrop-blur-sm"
+            >
+                <h2
+                    class="text-3xl font-bold text-white mb-6 flex items-center gap-3"
+                >
+                    <svg
+                        class="h-8 w-8 text-blue-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    Una Unión Potente
+                </h2>
+                <p class="text-lg text-neutral-300 leading-relaxed mb-4">
+                    Estamos emocionados de anunciar la colaboración entre
+                    <strong class="text-white">Bit&Chill</strong>, la
+                    comunidad Discord catalana, y <strong
+                        class="text-white">AstridCloud</strong
+                    >, nuestra plataforma de infraestructura cloud profesional.
+                </p>
+                <p class="text-lg text-neutral-300 leading-relaxed">
+                    Esta alianza estratégica nace con un objetivo claro: <strong
+                        class="text-blue-400"
+                        >mejorar la experiencia de todos nuestros usuarios</strong
+                    > y ofrecer servicios que, hasta ahora, Bit&Chill no podía proporcionar
+                    de forma independiente.
+                </p>
+            </div>
+
+            <!-- Benefits Grid -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">
+                    ¿Qué Significa Esto Para Ti?
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Benefit 1 -->
+                    <div
+                        class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-800/50 transition-colors"
+                    >
+                        <div
+                            class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10"
+                        >
+                            <svg
+                                class="h-6 w-6 text-blue-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Infraestructura Profesional
+                        </h3>
+                        <p class="text-neutral-400">
+                            Acceso a servicios de hosting, servidores dedicados
+                            y herramientas cloud que antes no estaban
+                            disponibles.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div
+                        class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-800/50 transition-colors"
+                    >
+                        <div
+                            class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-purple-500/10"
+                        >
+                            <svg
+                                class="h-6 w-6 text-purple-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Ventajas Exclusivas
+                        </h3>
+                        <p class="text-neutral-400">
+                            Los miembros de Bit&Chill con rango <strong
+                                class="text-white">AstridCloud+</strong
+                            > disfrutarán de descuentos y beneficios especiales.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div
+                        class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-800/50 transition-colors"
+                    >
+                        <div
+                            class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-green-500/10"
+                        >
+                            <svg
+                                class="h-6 w-6 text-green-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Comunidad Unida
+                        </h3>
+                        <p class="text-neutral-400">
+                            Soporte técnico directo, eventos conjuntos y una
+                            comunidad más fuerte y conectada.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div
+                        class="rounded-xl border border-neutral-800 bg-neutral-900/50 p-6 hover:bg-neutral-800/50 transition-colors"
+                    >
+                        <div
+                            class="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-yellow-500/10"
+                        >
+                            <svg
+                                class="h-6 w-6 text-yellow-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Innovación Constante
+                        </h3>
+                        <p class="text-neutral-400">
+                            Nuevas funcionalidades, herramientas y servicios
+                            desarrollados específicamente para la comunidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AstridCloud+ Section -->
+            <div
+                class="mb-12 rounded-2xl border-2 border-blue-600/30 bg-gradient-to-br from-blue-950/30 to-blue-900/20 p-8 backdrop-blur-sm"
+            >
+                <div class="flex items-center gap-3 mb-6">
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-500/20"
+                    >
+                        <svg
+                            class="h-8 w-8 text-blue-400"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-3xl font-bold text-white">
+                        Rango AstridCloud+
+                    </h2>
+                </div>
+
+                <p class="text-lg text-neutral-300 leading-relaxed mb-6">
+                    Los miembros del servidor de Discord de Bit&Chill que
+                    obtengan el rango <strong class="text-blue-400"
+                        >AstridCloud+</strong
+                    >
+                    disfrutarán de beneficios exclusivos:
+                </p>
+
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-neutral-300"
+                            >Descuentos especiales en todos los servicios de
+                            AstridCloud</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-neutral-300"
+                            >Acceso prioritario a nuevas funcionalidades y beta
+                            testing</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-neutral-300"
+                            >Soporte técnico premium con tiempos de respuesta
+                            reducidos</span
+                        >
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg
+                            class="h-6 w-6 text-blue-400 flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-neutral-300"
+                            >Canales exclusivos en Discord con contenido premium</span
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">
+                    Únete a la Comunidad
+                </h2>
+                <p class="text-lg text-neutral-400 mb-8 max-w-2xl mx-auto">
+                    Forma parte de esta nueva era. Únete al servidor de Discord
+                    de Bit&Chill y comienza a disfrutar de todos los beneficios.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a
+                        href="#"
+                        class="inline-flex items-center gap-2 rounded-lg bg-[#5865F2] text-white px-8 py-4 font-semibold text-lg transition-all hover:bg-[#4752C4] hover:shadow-xl hover:shadow-[#5865F2]/30 hover:-translate-y-1"
+                    >
+                        <svg
+                            class="h-6 w-6"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                            ></path>
+                        </svg>
+                        Unirse a Discord
+                    </a>
+                    <a
+                        href="/"
+                        class="inline-flex items-center gap-2 rounded-lg border-2 border-neutral-700 bg-neutral-900/50 text-neutral-100 px-8 py-4 font-semibold text-lg backdrop-blur-sm transition-all hover:bg-neutral-800 hover:border-neutral-600"
+                    >
+                        Volver al inicio
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    .badge-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .badge-wrapper::before {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        border-radius: 9999px;
+        background: conic-gradient(
+            from var(--angle),
+            transparent 0deg,
+            transparent 300deg,
+            #ff0080 315deg,
+            #7928ca 330deg,
+            #0070f3 345deg,
+            #00dfd8 360deg
+        );
+        animation: rotate 4s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    .badge {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 9999px;
+        background: #000;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        color: rgb(147 197 253);
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+        z-index: 1;
+    }
+</style>

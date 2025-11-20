@@ -1,0 +1,53 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+---
+
+<section
+    id="proyectos"
+    aria-labelledby="proyectos-title"
+    class="mx-auto max-w-7xl px-6 py-20"
+>
+    <div class="mb-12 text-center">
+        <h2
+            id="proyectos-title"
+            class="text-3xl sm:text-4xl font-bold text-white mb-4"
+        >
+            Nuestro Ecosistema
+        </h2>
+        <p class="mt-4 text-neutral-400 text-lg max-w-2xl mx-auto">
+            Explora las herramientas y servicios open source que impulsan
+            AstridCloud
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <ProjectCard
+            title="AstridCloud Platform"
+            version="v0.0.1"
+            status="active"
+            statusText="En Producción"
+            link="#"
+        />
+
+        <ProjectCard
+            title="AstridHosting"
+            version="v2.1.0"
+            status="transitioning"
+            statusText="Próximamente Open Source"
+        />
+
+        <ProjectCard
+            title="CLI Tool"
+            version="v0.0.0-dev"
+            status="development"
+            statusText="En Desarrollo"
+        />
+
+        <ProjectCard
+            title="Documentación"
+            version="v0.0.0-dev"
+            status="development"
+            statusText="En Desarrollo"
+        />
+    </div>
+</section>

@@ -1,0 +1,719 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+    title="AstridCloud+ — Plan Premium"
+    description="Desbloquea el potencial completo del ecosistema AstridCloud con beneficios exclusivos y acceso premium a todos nuestros servicios."
+>
+    <Header variant="golden" />
+    <main class="min-h-screen flex flex-col bg-neutral-950">
+        <!-- Hero Section with Pricing -->
+        <section class="relative overflow-hidden px-6 py-20 sm:py-32">
+            <!-- Background Decoration -->
+            <div class="absolute inset-0 -z-10">
+                <div
+                    class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"
+                >
+                </div>
+                <div
+                    class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"
+                >
+                </div>
+            </div>
+
+            <div class="mx-auto max-w-7xl">
+                <!-- Badge -->
+                <div class="mb-8 flex justify-center">
+                    <div class="badge-wrapper">
+                        <span class="badge gold">
+                            <svg
+                                class="h-4 w-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                ></path>
+                            </svg>
+                            Plan Premium
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Title & Subtitle -->
+                <div class="text-center mb-12">
+                    <h1 class="title-gradient mb-6">
+                        AstridCloud<span class="plus">+</span>
+                    </h1>
+                    <p
+                        class="text-xl sm:text-2xl text-neutral-400 font-light max-w-3xl mx-auto"
+                    >
+                        Desbloquea el potencial completo del ecosistema
+                        AstridCloud con beneficios exclusivos y acceso premium
+                    </p>
+                </div>
+
+                <!-- Pricing Card (Hero integrated) -->
+                <div class="max-w-md mx-auto mb-20">
+                    <div class="pricing-card-hero">
+                        <div class="pricing-badge-large">
+                            🎉 Oferta de Lanzamiento
+                        </div>
+                        <div class="pricing-content-hero">
+                            <div class="price-display">
+                                <div class="original-price-large">19.99€</div>
+                                <div class="discounted-price-large">
+                                    <span class="price-amount-large"
+                                        >17.99€</span
+                                    >
+                                    <span class="price-period-large">/mes</span>
+                                </div>
+                            </div>
+                            <div class="discount-badge-large">
+                                💰 Ahorra 10% — Solo hasta el 1 de diciembre
+                            </div>
+                        </div>
+                        <a href="#contacto" class="cta-button-hero">
+                            <span>Obtener AstridCloud+ ahora</span>
+                            <svg
+                                class="h-5 w-5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Benefits -->
+        <section
+            class="px-6 py-16 bg-gradient-to-b from-neutral-950 to-neutral-900"
+        >
+            <div class="mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">
+                        Lo que <span class="text-gradient">obtienes</span>
+                    </h2>
+                    <p class="text-neutral-400 text-lg max-w-2xl mx-auto mt-4">
+                        Beneficios exclusivos diseñados para maximizar tu
+                        experiencia
+                    </p>
+                </div>
+
+                <!-- Top Features (Highlighted) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <div class="feature-card-large">
+                        <div class="feature-icon-large blue">
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title-large">30% OFF Hosting</h3>
+                        <p class="feature-description-large">
+                            Descuento permanente en todos los planes de
+                            AstridHosting
+                        </p>
+                        <div class="feature-badge">Ahorro mensual</div>
+                    </div>
+
+                    <div class="feature-card-large">
+                        <div class="feature-icon-large purple">
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title-large">20% OFF Minecraft</h3>
+                        <p class="feature-description-large">
+                            Descuento en servidores MC para tu comunidad
+                        </p>
+                        <div class="feature-badge">Gaming</div>
+                    </div>
+
+                    <div class="feature-card-large">
+                        <div class="feature-icon-large pink">
+                            <svg fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title-large">Rango Discord VIP</h3>
+                        <p class="feature-description-large">
+                            Rol exclusivo y reconocimiento en la comunidad
+                        </p>
+                        <div class="feature-badge">Exclusivo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Benefits Grid -->
+        <section class="px-6 py-16 bg-neutral-900">
+            <div class="mx-auto max-w-7xl">
+                <div class="text-center mb-12">
+                    <h2 class="section-title">
+                        Todos los <span class="text-gradient">beneficios</span>
+                    </h2>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                >
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon green">
+                                <svg fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">
+                            Canales exclusivos Bit&Chill
+                        </h3>
+                        <p class="benefit-description">
+                            Acceso a contenido y eventos premium
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon orange">
+                                <svg fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">
+                            Soporte prioritario NebulaSec
+                        </h3>
+                        <p class="benefit-description">
+                            Atención directa del equipo de seguridad
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon-wrapper">
+                            <div class="benefit-icon violet">
+                                <svg fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                                    ></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="benefit-title">Prioridad Minoa Handmade</h3>
+                        <p class="benefit-description">
+                            Tus pedidos artesanales procesados primero
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+            class="px-6 py-24 bg-gradient-to-b from-neutral-900 to-neutral-950"
+        >
+            <div class="mx-auto max-w-4xl text-center">
+                <div class="cta-container">
+                    <h2 class="cta-title">
+                        ¿Listo para la experiencia <span class="text-gradient"
+                            >premium</span
+                        >?
+                    </h2>
+                    <p class="cta-description">
+                        Únete a AstridCloud+ hoy y disfruta de todos los
+                        beneficios exclusivos. Oferta de lanzamiento por tiempo
+                        limitado.
+                    </p>
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 justify-center mt-8"
+                    >
+                        <a href="#contacto" class="cta-button-primary">
+                            <span>Comenzar ahora</span>
+                            <svg
+                                class="h-5 w-5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="/" class="cta-button-secondary">
+                            Más información
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Footer />
+    </main>
+</Layout>
+
+<style>
+    /* Animation property for badge */
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    /* Badge Styles */
+    .badge-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .badge-wrapper::before {
+        content: "";
+        position: absolute;
+        inset: -3px;
+        border-radius: 9999px;
+        background: conic-gradient(
+            from var(--angle),
+            transparent 0deg,
+            transparent 300deg,
+            #fbbf24 315deg,
+            #f59e0b 330deg,
+            #f97316 345deg,
+            #fb923c 360deg
+        );
+        animation: rotate 4s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg;
+        }
+    }
+
+    .badge {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 9999px;
+        background: #000;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.025em;
+        z-index: 1;
+    }
+
+    .badge.gold {
+        color: rgb(251, 191, 36);
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+    }
+
+    /* Title Styles */
+    .title-gradient {
+        font-size: clamp(3rem, 10vw, 6rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: white;
+        line-height: 1;
+    }
+
+    .title-gradient .plus {
+        background: linear-gradient(135deg, #fbbf24, #f59e0b, #f97316);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    /* Section Titles */
+    .section-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        color: white;
+        line-height: 1.2;
+    }
+
+    .text-gradient {
+        background: linear-gradient(135deg, #fbbf24, #f59e0b, #f97316);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    /* Hero Pricing Card */
+    .pricing-card-hero {
+        background: linear-gradient(
+            135deg,
+            rgba(23, 23, 23, 0.9),
+            rgba(23, 23, 23, 0.7)
+        );
+        border: 2px solid rgba(251, 191, 36, 0.4);
+        border-radius: 1.5rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 25px 70px rgba(251, 191, 36, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .pricing-card-hero:hover {
+        border-color: rgba(251, 191, 36, 0.6);
+        box-shadow: 0 30px 80px rgba(251, 191, 36, 0.3);
+        transform: translateY(-4px);
+    }
+
+    .pricing-badge-large {
+        text-align: center;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        color: #000;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 0.65rem 1.5rem;
+        border-radius: 9999px;
+        margin-bottom: 2rem;
+        box-shadow: 0 6px 16px rgba(251, 191, 36, 0.4);
+    }
+
+    .pricing-content-hero {
+        text-align: center;
+    }
+
+    .price-display {
+        margin-bottom: 2rem;
+    }
+
+    .original-price-large {
+        font-size: 1.5rem;
+        color: rgb(163, 163, 163);
+        text-decoration: line-through;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .discounted-price-large {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .price-amount-large {
+        font-size: 4rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b, #f97316);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+    }
+
+    .price-period-large {
+        font-size: 1.5rem;
+        color: rgb(163, 163, 163);
+        font-weight: 600;
+    }
+
+    .discount-badge-large {
+        display: inline-block;
+        background: rgba(34, 197, 94, 0.2);
+        border: 1.5px solid rgba(34, 197, 94, 0.6);
+        color: rgb(74, 222, 128);
+        font-weight: 600;
+        font-size: 0.925rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 9999px;
+        margin-bottom: 2rem;
+    }
+
+    .cta-button-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        width: 100%;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b, #f97316);
+        color: #000;
+        font-weight: 700;
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
+    }
+
+    .cta-button-hero:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(251, 191, 36, 0.5);
+        filter: brightness(1.1);
+    }
+
+    /* Featured Benefits Cards */
+    .feature-card-large {
+        background: linear-gradient(
+            135deg,
+            rgba(23, 23, 23, 0.6),
+            rgba(23, 23, 23, 0.4)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1.25rem;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .feature-card-large:hover {
+        background: linear-gradient(
+            135deg,
+            rgba(23, 23, 23, 0.8),
+            rgba(23, 23, 23, 0.6)
+        );
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-0.5rem);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .feature-icon-large {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .feature-icon-large svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        color: white;
+    }
+
+    .feature-icon-large.blue {
+        background: linear-gradient(
+            135deg,
+            rgb(59, 130, 246),
+            rgb(37, 99, 235)
+        );
+    }
+
+    .feature-icon-large.purple {
+        background: linear-gradient(
+            135deg,
+            rgb(139, 92, 246),
+            rgb(124, 58, 237)
+        );
+    }
+
+    .feature-icon-large.pink {
+        background: linear-gradient(
+            135deg,
+            rgb(236, 72, 153),
+            rgb(219, 39, 119)
+        );
+    }
+
+    .feature-title-large {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0.75rem;
+    }
+
+    .feature-description-large {
+        font-size: 1rem;
+        color: rgb(163, 163, 163);
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .feature-badge {
+        display: inline-block;
+        background: rgba(251, 191, 36, 0.1);
+        border: 1px solid rgba(251, 191, 36, 0.3);
+        color: rgb(251, 191, 36);
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    /* Benefit Card Styles (smaller cards) */
+    .benefit-card {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+        background: rgba(23, 23, 23, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover {
+        background: rgba(23, 23, 23, 0.5);
+        border-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-0.25rem);
+    }
+
+    .benefit-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+    }
+
+    .benefit-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .benefit-icon svg {
+        width: 1.75rem;
+        height: 1.75rem;
+        color: white;
+    }
+
+    .benefit-icon.green {
+        background: linear-gradient(135deg, rgb(34, 197, 94), rgb(22, 163, 74));
+    }
+
+    .benefit-icon.orange {
+        background: linear-gradient(
+            135deg,
+            rgb(249, 115, 22),
+            rgb(234, 88, 12)
+        );
+    }
+
+    .benefit-icon.violet {
+        background: linear-gradient(
+            135deg,
+            rgb(168, 85, 247),
+            rgb(147, 51, 234)
+        );
+    }
+
+    .benefit-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+
+    .benefit-description {
+        font-size: 0.875rem;
+        color: rgb(163, 163, 163);
+        line-height: 1.5;
+    }
+
+    /* CTA Section */
+    .cta-container {
+        background: linear-gradient(
+            135deg,
+            rgba(23, 23, 23, 0.8),
+            rgba(23, 23, 23, 0.6)
+        );
+        border: 2px solid rgba(251, 191, 36, 0.2);
+        border-radius: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .cta-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 800;
+        color: white;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+
+    .cta-description {
+        font-size: 1.125rem;
+        color: rgb(163, 163, 163);
+        max-width: 42rem;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+
+    .cta-button-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b, #f97316);
+        color: #000;
+        font-weight: 700;
+        font-size: 1.125rem;
+        padding: 1rem 2.5rem;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(251, 191, 36, 0.3);
+    }
+
+    .cta-button-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px rgba(251, 191, 36, 0.5);
+        filter: brightness(1.1);
+    }
+
+    .cta-button-secondary {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1.5px solid rgba(255, 255, 255, 0.1);
+        color: white;
+        font-weight: 600;
+        font-size: 1.125rem;
+        padding: 1rem 2.5rem;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .cta-button-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 640px) {
+        .price-amount-large {
+            font-size: 3rem;
+        }
+
+        .section-title,
+        .cta-title {
+            font-size: 2rem;
+        }
+    }
+</style>

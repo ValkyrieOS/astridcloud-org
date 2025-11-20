@@ -1,0 +1,111 @@
+---
+interface Props {
+    icon: string;
+    title: string;
+    description: string;
+    color: string;
+}
+
+const { icon, title, description, color } = Astro.props;
+---
+
+<div class="feature-card group">
+    <div class="feature-icon-wrapper" style={`--color: ${color}`}>
+        <div class="feature-icon">
+            <Fragment set:html={icon} />
+        </div>
+    </div>
+    <h3 class="feature-title">{title}</h3>
+    <p class="feature-description">{description}</p>
+</div>
+
+<style>
+    .feature-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(
+            135deg,
+            rgba(23, 23, 23, 0.5),
+            rgba(10, 10, 10, 0.5)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+    }
+
+    .feature-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 1.5rem;
+        padding: 1px;
+        background: linear-gradient(135deg, var(--color), transparent);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.4),
+            0 0 60px rgba(var(--color), 0.2);
+    }
+
+    .feature-card:hover::before {
+        opacity: 1;
+    }
+
+    .feature-icon-wrapper {
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .feature-icon {
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        background: linear-gradient(135deg, var(--color), transparent);
+        box-shadow: 0 8px 32px rgba(var(--color), 0.3);
+        transition: all 0.4s ease;
+    }
+
+    .feature-card:hover .feature-icon {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 12px 48px rgba(var(--color), 0.5);
+    }
+
+    .feature-icon :global(svg) {
+        width: 2rem;
+        height: 2rem;
+        color: white;
+    }
+
+    .feature-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 0.75rem;
+        letter-spacing: -0.025em;
+    }
+
+    .feature-description {
+        font-size: 0.95rem;
+        color: rgb(163, 163, 163);
+        line-height: 1.6;
+    }
+</style>
